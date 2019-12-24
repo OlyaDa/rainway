@@ -1,0 +1,129 @@
+//////////////////////////CERTIFICATES BEGIN////////////////////////
+$font_text: 'Open Sans', sans-serif;
+.certificates {
+  background: #F7F7F7;
+  padding: 62px 0 53px 0;
+
+  .caption {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 178.18%;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    color: #333333;
+    margin-bottom: 44px;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 75px;
+      height: 6px;
+      background: #C60C38;
+      bottom: -12px;
+    }
+  }
+
+  .text {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 169.68%;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    color: #000000;
+    max-width: 447px;
+  }
+
+  .gallery-image {
+    position: relative;
+    outline: none;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    z-index: -1;
+    filter: blur(3px);
+    max-width: 400px;
+    max-height: 567px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .slick-center {
+    transition: .3s;
+    transform: scale(1.2);
+    z-index: 9;
+    position: relative;
+    filter: blur(0px);
+    box-shadow: none;
+  }
+
+  ///slick-prev slick-next
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 1px;
+  }
+
+  .slick-prev.slick-arrow {
+    right: 60px;
+    top: 96%;
+  }
+
+  .slick-next {
+    right: 0;
+    top: 96%;
+  }
+
+  .slick-prev, .slick-next {
+    font-size: 16px;
+    line-height: 0;
+    position: absolute;
+    display: block;
+    width: 47px;
+    height: 47px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #C60C38;
+    border: 2px solid #C60C38;
+    outline: none;
+    background: #FFFFFF;
+    z-index: 1;
+  }
+
+  .slick-prev:active, .slick-next:active {
+    color: #fff;
+    background: #C60C38;
+    border: 2px solid #C60C38;
+  }
+  ///slick-prev slick-next end
+
+
+  ////media
+
+  @media (max-width: 768px) {
+    padding: 40px 0 40px 0;
+
+    .caption {
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center;
+      line-height: 138.18%;
+      &:after {
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+
+    .text {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+  }
+}
+
+//////////////////////////CERTIFICATES END////////////////////////

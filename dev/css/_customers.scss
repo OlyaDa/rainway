@@ -1,0 +1,171 @@
+//////////////////////////CUSTOMERS BEGIN////////////////////////
+$font_text: 'Open Sans', sans-serif;
+
+.customers {
+  background: #F7F7F7;
+
+  .customers-inner {
+    display: flex;
+  }
+  .image {
+    background: url("../../public/images/customers.png") center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-basis: 42%;
+    //width: 600px;
+  }
+
+  .customers-body {
+    padding: 57px 0 0 0;
+    display: flex;
+    flex-basis: 58%;
+    flex-direction: column;
+  }
+
+  .caption {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 178.18%;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    color: #333333;
+    max-width: 532px;
+    margin-left: 107px;
+    margin-bottom: 54px;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 75px;
+      height: 6px;
+      background: #C60C38;
+      bottom: -12px;
+    }
+  }
+
+  .text {
+    margin-left: 107px;
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 169.68%;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    color: #000000;
+    max-width: 624px;
+    margin-bottom: 42px;
+  }
+
+  .blocks {
+    display: flex;
+
+    .clients, .years {
+      display: flex;
+      background: #6FAADD;
+      flex-direction: column;
+      width: 50%;
+      height: 175px;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .years {
+      background: #C60C38;
+    }
+
+    .number {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 178.18%;
+      letter-spacing: 0.1em;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 7px;
+    }
+
+    .title {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 178.18%;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  }
+
+  ///media
+
+  @media (max-width: 991px) {
+    .customers-inner {
+      flex-direction: column;
+    }
+
+    .caption, .text {
+      margin-left: 0;
+      max-width: 100%;
+    }
+
+    .image {
+      width: 100%;
+      height: 628px;
+      margin-left: auto;
+      margin-right: auto;
+      flex-basis: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .customers-body {
+      padding: 40px 0 0 0;
+    }
+
+    .image {
+      height: 450px;
+    }
+
+    .caption, .text {
+      text-align: center;
+    }
+    .caption {
+      margin-bottom: 40px;
+      font-size: 22px;
+      line-height: 138.18%;
+
+      &:after {
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+  }
+
+  @media (max-width: 548px) {
+    .image {
+      height: 350px;
+    }
+
+   .blocks .clients, .blocks .years {
+      justify-content: end;
+    }
+  }
+
+  @media (max-width: 370px) {
+    .image {
+      height: 280px;
+    }
+  }
+}
+
+//////////////////////////CUSTOMERS END////////////////////////

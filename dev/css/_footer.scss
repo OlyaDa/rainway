@@ -1,0 +1,303 @@
+//////////////////////////FOOTER BEGIN////////////////////////
+$font_text: 'Open Sans', sans-serif;
+
+.footer {
+
+  .caption {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 178.18%;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    position: relative;
+    margin-bottom: 57px;
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 75px;
+      height: 6px;
+      background: #FFFFFF;
+      bottom: -12px;
+    }
+  }
+
+  .form-title {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 169.68%;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 51px;
+  }
+
+  .footer-inner {
+    display: flex;
+  }
+
+  .container-footer {
+    max-width: 50%;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: 74px;
+    position: relative;
+  }
+
+  .left {
+    display: flex;
+    flex-basis: 50%;
+    background: #C60C38;
+    justify-content: flex-end;
+  }
+
+  form {
+    padding: 88px 0 64px 0;
+    max-width: 585px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+    .inputs {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    input {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 178.18%;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background: transparent;
+      border: 2px solid #FFFFFF;
+      border-radius: 0;
+      padding: 14px 20px;
+      width: 270px;
+      display: inline-block;
+      margin-bottom: 37px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 137px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 178.18%;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background: transparent;
+      border: 2px solid #FFFFFF;
+      border-radius: 0;
+      padding: 14px 20px;
+      display: inline-block;
+      margin-bottom: 40px;
+    }
+
+    ::-webkit-input-placeholder {color:#FFFFFF;}
+    ::-moz-placeholder          {color:#FFFFFF;}
+    :-moz-placeholder           {color:#FFFFFF;}
+    :-ms-input-placeholder      {color:#FFFFFF;}
+
+    button {
+      display: block;
+      margin-left: auto;
+      max-width: 260px;
+      background: #C60C38;
+      border: 4px solid #fff;
+      &:hover {
+        background: #fff;
+        .btn {
+        color: #C60C38;
+        }
+      }
+      .btn {
+        font-family: $font_text;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border-radius: 0;
+        padding: 12px 47px;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-basis: 50%;
+    background: #FFFFFF;
+    flex-direction: column;
+    //justify-content: flex-end;
+
+    .social-icon {
+      background: #6FAADD;
+      justify-content: space-evenly;
+      display: flex;
+      padding: 50px 0;
+
+      .facebook, .instagram, .youtube {
+        max-width: 40px;
+        max-height: 40px;
+      }
+    }
+
+    .image {
+      max-width: 40px;
+      max-height: 40px;
+      margin-right: 31px;
+    }
+
+    .address, .tel, .time {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .address {
+      padding: 42px 0 33px 0;
+      border-bottom: 1px solid #B8DDFD;
+    }
+
+    .time {
+      padding: 26px 0 26px 0;
+      border-bottom: 1px solid #B8DDFD;
+    }
+
+    .tel {
+      padding: 22px 0 29px 0;
+      border-bottom: 1px solid #B8DDFD;
+    }
+
+    .address-title, .tel-title, .time-title {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 178.18%;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #333333;
+      margin: 0;
+    }
+
+    .address-text, .time-text, .tel-text a {
+      margin: 0 0 0 18px;
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 178.18%;
+      letter-spacing: 0.1em;
+      text-transform: capitalize;
+      color: #333333;
+    }
+
+    .tel-text {
+      margin: 0 0 0 18px;
+    }
+
+    .info {
+      padding: 41px 0 17px 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .image-logo {
+        max-width: 134px;
+        max-height: 68px;
+      }
+
+      .footer-text {
+        font-family: $font_text;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 169.68%;
+        letter-spacing: 0.1em;
+        text-transform: capitalize;
+        color: #000000;
+        max-width: 438px;
+      }
+    }
+  }
+
+  ///media
+
+  @media (max-width: 992px) {
+    .footer-inner {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .caption {
+      text-align: center;
+      font-size: 22px;
+      line-height: 138.18%;
+      margin-bottom: 40px;
+      &:after {
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+
+    .form-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      padding: 40px 0 40px 0;
+
+      button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .right .social-icon {
+      padding: 25px 0;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .right .info {
+      flex-direction: column;
+      .image-logo {
+        margin-bottom: 20px;
+      }
+      .footer-text {
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    form input {
+      display: block;
+      width: 100%;
+    }
+    form .inputs {
+      flex-direction: column;
+    }
+  }
+}
+
+//////////////////////////FOOTER END////////////////////////
