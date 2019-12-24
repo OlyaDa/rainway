@@ -4,6 +4,7 @@ $font_text: 'Open Sans', sans-serif;
 .soffits {
   background: #C60C38;
   padding: 61px 0 50px 0;
+  overflow: hidden;
 
   .caption {
     font-family: $font_text;

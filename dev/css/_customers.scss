@@ -3,6 +3,7 @@ $font_text: 'Open Sans', sans-serif;
 
 .customers {
   background: #F7F7F7;
+  overflow: hidden;
 
   .customers-inner {
     display: flex;

@@ -58,6 +58,8 @@ $('.soffits-slider').slick({
     infinite: true,
     arrows: true,
     dots: false,
+    autoplay: true,
+    speed: 1000,
     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
     responsive: [
@@ -80,6 +82,7 @@ $('.soffits-slider').slick({
             settings: {
                 slidesToShow: 2,
                 arrows: false,
+                autoplay: false,
             }
         },
 
@@ -88,6 +91,7 @@ $('.soffits-slider').slick({
             settings: {
                 slidesToShow: 1,
                 arrows: false,
+                autoplay: false,
             }
         }
     ]
@@ -101,18 +105,21 @@ $('.reviews-slider').slick({
     infinite: true,
     arrows: false,
     dots: false,
+    autoplay: true,
+    speed: 1000,
     responsive: [
         {
             breakpoint: 993,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 2,
             }
         },
 
         {
             breakpoint: 585,
             settings: {
-                slidesToShow: 1
+                slidesToShow: 1,
+                autoplay: false,
             }
         },
     ]
@@ -169,19 +176,20 @@ $('.certificates-slider').slick({
 
 $('.nav-link-new').mPageScroll2id();
 
-//video popup
+//animation
 
-// $(document).ready(function() {
-//     $('.popup-youtube').magnificPopup({
-//         // disableOn: 700,
-//         type: 'iframe',
-//         mainClass: 'mfp-fade',
-//         removalDelay: 160,
-//         preloader: false,
-//
-//         fixedContentPos: false
-//     });
-// });
+function ready() {
+    if(window.innerWidth <= 992) {
+        AOS.init({
+            disable: true,
+        });
+    }
+    else {
+        AOS.init({
+            disable: false,
+        });
+    }
+};
 
 
-
+ready();

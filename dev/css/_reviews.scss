@@ -3,6 +3,7 @@ $font_text: 'Open Sans', sans-serif;
 
 .reviews {
   padding: 121px 0 91px 0;
+  overflow: hidden;
 
   .caption {
     font-family: $font_text;
