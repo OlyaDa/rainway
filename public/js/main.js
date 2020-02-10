@@ -105,7 +105,7 @@ $('.reviews-slider').slick({
     infinite: true,
     arrows: false,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     speed: 1000,
     responsive: [
         {

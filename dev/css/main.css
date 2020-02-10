@@ -553,9 +553,22 @@
   .office .office-slider {
     display: flex;
     flex-basis: 42%; }
+  .office .first {
+    background: url("../../public/images/off01.jpg") center no-repeat;
+    background-size: cover; }
+  .office .second {
+    background: url("../../public/images/off02.jpg") center no-repeat;
+    background-size: cover; }
+  .office .third {
+    background: url("../../public/images/off03.jpg") center no-repeat;
+    background-size: cover; }
+  .office .fours {
+    background: url("../../public/images/off04.jpg") center no-repeat;
+    background-size: cover; }
+  .office .fives {
+    background: url("../../public/images/off05.jpg") center no-repeat;
+    background-size: cover; }
   .office .image {
-    background: url("../../public/images/office2.png") center no-repeat;
-    background-size: cover;
     display: flex;
     flex-basis: 42%;
     width: 598px;
@@ -1229,6 +1242,8 @@
 .reviews {
   padding: 121px 0 91px 0;
   overflow: hidden; }
+  .reviews .slick-track {
+    display: flex; }
   .reviews .caption {
     font-family: "Open Sans", sans-serif;
     font-style: normal;
@@ -1257,7 +1272,7 @@
     background: #F5F5F5;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
     max-width: 366px;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
